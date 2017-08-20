@@ -32,5 +32,5 @@ You should have completed all the necessary steps for finishing this project in 
     See the License for the specific language governing permissions and
     limitations under the License.
 
-## Icon by Icons8
+### Icon by Icons8
 <a href="https://icons8.com/icon/43637/Microphone-2">Microphone 2 icon credits</a>
