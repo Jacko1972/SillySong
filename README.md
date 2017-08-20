@@ -31,3 +31,6 @@ You should have completed all the necessary steps for finishing this project in 
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+### Icon by Icons8
+<a href="https://icons8.com/icon/43637/Microphone-2">Microphone 2 icon credits</a>
