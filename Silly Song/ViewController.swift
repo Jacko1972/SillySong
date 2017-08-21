@@ -49,22 +49,31 @@ let bananaFanaTemplate = [
     "Me My Mo M<SHORT_NAME>",
     "<FULL_NAME>"].joined(separator: "\n")
 
+//func shortNameFromName(name: String) -> String {
+//    var tempName = name.lowercased()
+//    let chars: CharacterSet = CharacterSet(charactersIn: "aeiou")
+//    
+//    let range = tempName.startIndex..<tempName.index(after: tempName.startIndex)
+//    var removeChars: Bool = true
+//    if tempName.rangeOfCharacter(from: chars, options: String.CompareOptions.literal, range: tempName.startIndex..<tempName.endIndex) != nil {
+//        while removeChars {
+//            if tempName.rangeOfCharacter(from: chars, options: String.CompareOptions.literal, range: range) != nil {
+//                removeChars = false
+//            } else {
+//                tempName.remove(at: tempName.startIndex)
+//            }
+//        }
+//    }
+//    return tempName
+//}
+
 func shortNameFromName(name: String) -> String {
-    var tempName = name.lowercased()
-    let chars: CharacterSet = CharacterSet(charactersIn: "aeiou")
-    
-    let range = tempName.startIndex..<tempName.index(after: tempName.startIndex)
-    var removeChars: Bool = true
-    if tempName.rangeOfCharacter(from: chars, options: String.CompareOptions.literal, range: tempName.startIndex..<tempName.endIndex) != nil {
-        while removeChars {
-            if tempName.rangeOfCharacter(from: chars, options: String.CompareOptions.literal, range: range) != nil {
-                removeChars = false
-            } else {
-                tempName.remove(at: tempName.startIndex)
-            }
-        }
+    let lowercaseName = name.lowercased()
+    let vowelSet = CharacterSet(charactersIn: "aeiou")
+    if let range = lowercaseName.rangeOfCharacter(from: vowelSet){
+        return lowercaseName.substring(from: range.lowerBound)
     }
-    return tempName
+    return lowercaseName
 }
 
 func lyricsByName(template: String, fullName: String) -> String {
