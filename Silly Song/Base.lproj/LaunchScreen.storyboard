@@ -36,9 +36,8 @@
                                     <constraint firstAttribute="width" secondItem="rQy-0G-LgD" secondAttribute="height" multiplier="1:1" id="qCE-Ij-0Ss"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPv-T0-gFt">
-                                <rect key="frame" x="57" y="118" width="245" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPv-T0-gFt">
+                                <rect key="frame" x="80.5" y="156.5" width="214" height="76.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Silly Song">
                                         <attributes>
@@ -49,11 +48,15 @@
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.50585701790000004" green="0.85822014420000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="rPv-T0-gFt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HqE-jP-2sb"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="t1p-3p-qGo" secondAttribute="bottom" constant="8" id="QTi-Q6-Emt"/>
+                            <constraint firstItem="rQy-0G-LgD" firstAttribute="top" secondItem="rPv-T0-gFt" secondAttribute="bottom" constant="50" id="SXs-cf-exz"/>
                             <constraint firstItem="t1p-3p-qGo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TNG-ZT-yvj"/>
                             <constraint firstItem="rQy-0G-LgD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VRp-ff-LYD"/>
                             <constraint firstItem="rQy-0G-LgD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="poY-Hv-Smf"/>
